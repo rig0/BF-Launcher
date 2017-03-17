@@ -31,6 +31,6 @@ Instructions
 Other Notes
 -----------
 If you happen to have Origin installed somewhere other than the default Programs folder, 
-you will need to add the path of Origin.exe as a second argument separated by a space.
+you will need to add the path of Origin.exe as a second argument.
 
 	Example: "G:\OriginLibrary\BF-Launcher.exe" bf1 G:\Origin\Origin.exe
