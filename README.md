@@ -20,12 +20,12 @@ Instructions
 5. Rename from "BF-Launcher" to "Battlefield 1" or "Battlefield 4"
 
 6. Under Target add one of the following arguments seperated by a space:
-	````
-	For: Battlefield 1 = bf1
-	     Battlefield 4 = bf4	 
+	```
+	For Battlefield 1: bf1
+	For Battlefield 4: bf4
 	
 	Example: "G:\OriginLibrary\BF-Launcher.exe" bf1
-	````
+	```
 7. All Done. Launching the shortcut will launch the respective Battlefield game (1 or 4).
 
 Other Notes
@@ -33,4 +33,5 @@ Other Notes
 If you happen to have Origin installed somewhere other than the default Programs folder, 
 you will need to add the path of Origin.exe as a second argument.
 
-	Example: "G:\OriginLibrary\BF-Launcher.exe" bf1 G:\Origin\Origin.exe
+Example:
+`"G:\OriginLibrary\BF-Launcher.exe" bf1 G:\Origin\Origin.exe`
