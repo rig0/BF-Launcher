@@ -21,10 +21,15 @@ Instructions
 
 6. Under Target add one of the following arguments seperated by a space:
 	```
-	For Battlefield 1: bf1
-	For Battlefield 4: bf4
+	For Battlefield 1 - Ultimate Edition: BF1-U
+	For Battlefield 1 - Deluxe Edition: BF1-D
+	For Battlefield 1 - Standard Edition: BF1-S
+
+	For Battlefield 4 - Premium Edition: BF4-P
+	For Battlefield 4 - Deluxe Edition: BF4-D
+	For Battlefield 4 - Standard Edition: BF4-S
 	
-	Example: "G:\OriginLibrary\BF-Launcher.exe" bf1
+	Example: "G:\OriginLibrary\BF-Launcher.exe" bf1-u
 	```
 7. All Done. Launching the shortcut will launch the respective Battlefield game (1 or 4).
 
@@ -34,4 +39,4 @@ If you happen to have Origin installed somewhere other than the default Programs
 you will need to add the path of Origin.exe as a second argument.
 
 Example:
-`"G:\OriginLibrary\BF-Launcher.exe" bf1 G:\Origin\Origin.exe`
+`"G:\OriginLibrary\BF-Launcher.exe" bf1-u G:\Origin\Origin.exe`

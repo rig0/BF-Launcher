@@ -18,20 +18,35 @@ int main(int argc, char **argv)
     FreeConsole();
     //Return error if no parameter is specified
     if (argv[1]==NULL){
-        MessageBox(0, "Specify which game to launch: \n\nBattlefield 1 = bf1 \nBattlefield 4 = bf4", "Error", MB_OK);
+        MessageBox(0, "Specify which game to launch: \n\nBattlefield 1: Ultimate = BF1-u \nBattlefield 1: Deluxe = BF1-d \nBattlefield 1: Standard = BF1-s \n\nBattlefield 4: Premium = BF4-p \nBattlefield 4: Deluxe = BF4-d \nBattlefield 4: Standard = BF4-s", "Error", MB_OK);
         return 1;}
     //determine which battlefield to start
-    string ver = argv[1];
-    if (ver == "bf1"){
+	if (_stricmp(argv[1], "BF1-U") == 0) {
         gEX = "bf1.exe";
-        oID = "origin://launchgame/Origin.OFR.50.0001385";
+        oID = "origin://launchgame/Origin.OFR.50.0001662";
         }
-    else if (ver == "bf4"){
-        gEX = "bf4.exe";
-        oID = "origin://launchgame/OFB-EAST:109552316";
-        }
+	else if (_stricmp(argv[1], "BF1-D") == 0) {
+		gEX = "bf1.exe";
+		oID = "origin://launchgame/Origin.OFR.50.0001385";
+	}
+	else if (_stricmp(argv[1], "BF1-S") == 0) {
+		gEX = "bf1.exe";
+		oID = "origin://launchgame/Origin.OFR.50.0000557";
+	}
+	else if (_stricmp(argv[1], "BF4-P") == 0) {
+		gEX = "bf4.exe";
+		oID = "origin://launchgame/OFB-EAST:109552316";
+	}
+	else if (_stricmp(argv[1], "BF4-D") == 0) {
+		gEX = "bf4.exe";
+		oID = "origin://launchgame/OFB-EAST:109549060";
+	}
+	else if (_stricmp(argv[1], "BF4-S") == 0) {
+		gEX = "bf4.exe";
+		oID = "origin://launchgame/OFB-EAST:109546867";
+	}
     else {
-        MessageBox(0, "Please specify a valid parameter: \n\nBattlefield 1 = bf1 \nBattlefield 4 = bf4", "Error", MB_OK);
+        MessageBox(0, "Please specify a valid parameter: \n\nBattlefield 1: Ultimate = BF1-u \nBattlefield 1: Deluxe = BF1-d \nBattlefield 1: Standard = BF1-s \n\nBattlefield 4: Premium = BF4-p \nBattlefield 4: Deluxe = BF4-d \nBattlefield 4: Standard = BF4-s", "Error", MB_OK);
         return 1;
         }
     //determine origin directory
@@ -77,7 +92,7 @@ HANDLE GetHndl(LPCTSTR pName){
     HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, NULL);
     if (Process32First(snapshot, &entry) == TRUE){
         while (Process32Next(snapshot, &entry) == TRUE){
-            if (stricmp(entry.szExeFile, pName ) == 0){
+            if (_stricmp(entry.szExeFile, pName ) == 0){
             HANDLE hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, entry.th32ProcessID);
             CloseHandle(snapshot);
             return hProcess;}}
