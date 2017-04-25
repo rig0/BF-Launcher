@@ -33,15 +33,15 @@ int main(int argc, char **argv)
 		gEX = "bf1.exe";
 		oID = "origin://launchgame/Origin.OFR.50.0000557";
 	}
-	else if (_stricmp(argv[1], "BF1-P") == 0) {
+	else if (_stricmp(argv[1], "BF4-P") == 0) {
 		gEX = "bf4.exe";
 		oID = "origin://launchgame/OFB-EAST:109552316";
 	}
-	else if (_stricmp(argv[1], "BF1-D") == 0) {
+	else if (_stricmp(argv[1], "BF4-D") == 0) {
 		gEX = "bf4.exe";
 		oID = "origin://launchgame/OFB-EAST:109549060";
 	}
-    else if (_stricmp(argv[1], "BF1-S") == 0) {
+    else if (_stricmp(argv[1], "BF4-S") == 0) {
         gEX = "bf4.exe";
         oID = "origin://launchgame/OFB-EAST:109546867";
         }
