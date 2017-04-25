@@ -39,4 +39,4 @@ If you happen to have Origin installed somewhere other than the default Programs
 you will need to add the path of Origin.exe as a second argument.
 
 Example:
-`"G:\OriginLibrary\BF-Launcher.exe" bf1 G:\Origin\Origin.exe`
+`"G:\OriginLibrary\BF-Launcher.exe" bf1-u G:\Origin\Origin.exe`
