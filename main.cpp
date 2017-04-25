@@ -41,10 +41,10 @@ int main(int argc, char **argv)
 		gEX = "bf4.exe";
 		oID = "origin://launchgame/OFB-EAST:109549060";
 	}
-    else if (_stricmp(argv[1], "BF4-S") == 0) {
-        gEX = "bf4.exe";
-        oID = "origin://launchgame/OFB-EAST:109546867";
-        }
+	else if (_stricmp(argv[1], "BF4-S") == 0) {
+		gEX = "bf4.exe";
+		oID = "origin://launchgame/OFB-EAST:109546867";
+	}
     else {
         MessageBox(0, "Please specify a valid parameter: \n\nBattlefield 1: Ultimate = BF1-u \nBattlefield 1: Deluxe = BF1-d \nBattlefield 1: Standard = BF1-s \n\nBattlefield 4: Premium = BF4-p \nBattlefield 4: Deluxe = BF4-d \nBattlefield 4: Standard = BF4-s", "Error", MB_OK);
         return 1;
