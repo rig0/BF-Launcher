@@ -1,3 +1,8 @@
+v1.1.0 
+------
+- Added support for all versions of BF 1 & 4 titles. (Standard, Deluxe, Premium, etc.)
+- Arguments are no longer case sensitive.
+
 Description
 -----------
 - Launches any Battlefield game featuring the new UI (currently only Battlfield 1 and 4)
