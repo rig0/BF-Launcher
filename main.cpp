@@ -18,7 +18,7 @@ int main(int argc, char **argv)
     FreeConsole();
     //Return error if no parameter is specified
     if (argv[1]==NULL){
-        MessageBox(0, "Specify which game to launch: \n\nBattlefield 1: Ultimate = BF1-u \nBattlefield 1: Deluxe = BF1-d \nBattlefield 1: Standard = BF1-s \n\nBattlefield 4: Premium = BF4-p \nBattlefield 4: Deluxe = BF4-d \nBattlefield 4: Standard = BF4-s", "Error", MB_OK);
+        MessageBox(0, "Specify which game to launch: \n\nBattlefield 1: Ultimate = BF1-u \nBattlefield 1: Deluxe = BF1-d \nBattlefield 1: Standard = BF1-s \n\nBattlefield 4: Premium = BF4-p \nBattlefield 4: Deluxe = BF4-d \nBattlefield 4: Standard = BF4-s \n\nBattlefield 4: Premium (UK) = BF4-p-uk \n\nIf your version is not supported please open up a issue on the GitHub page.", "Error", MB_OK);
         return 1;}
     //determine which battlefield to start
 	if (_stricmp(argv[1], "BF1-U") == 0) {
@@ -44,6 +44,10 @@ int main(int argc, char **argv)
 	else if (_stricmp(argv[1], "BF4-S") == 0) {
 		gEX = "bf4.exe";
 		oID = "origin://launchgame/OFB-EAST:109546867";
+	}
+	else if (_stricmp(argv[1], "BF4-P-UK") == 0) {  //UK Version
+		gEX = "bf4.exe";
+		oID = "origin://launchgame/OFB-EAST:109552312";
 	}
     else {
         MessageBox(0, "Please specify a valid parameter: \n\nBattlefield 1: Ultimate = BF1-u \nBattlefield 1: Deluxe = BF1-d \nBattlefield 1: Standard = BF1-s \n\nBattlefield 4: Premium = BF4-p \nBattlefield 4: Deluxe = BF4-d \nBattlefield 4: Standard = BF4-s", "Error", MB_OK);

@@ -1,3 +1,7 @@
+v1.2.0
+------
+- Added support for Battlefield 4 Premium UK Version
+
 v1.1.0 
 ------
 - Added support for all versions of BF 1 & 4 titles. (Standard, Deluxe, Premium, etc.)
@@ -34,6 +38,8 @@ Instructions
 	For Battlefield 4 - Deluxe Edition: BF4-D
 	For Battlefield 4 - Standard Edition: BF4-S
 	
+	For Battlefield 4 - Premium Edition (UK): BF4-P-UK
+	
 	Example: "G:\OriginLibrary\BF-Launcher.exe" bf1-u
 	```
 7. All Done. Launching the shortcut will launch the respective Battlefield game (1 or 4).
@@ -45,3 +51,5 @@ you will need to add the path of Origin.exe as a second argument.
 
 Example:
 `"G:\OriginLibrary\BF-Launcher.exe" bf1-u G:\Origin\Origin.exe`
+
+If your version is from a different region/not supported please open up an issue and I will add support.
